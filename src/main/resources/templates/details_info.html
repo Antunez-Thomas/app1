@@ -3,11 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title th:text="${Title}">SpringBoot App</title>
+    <title>Employees Information</title>
 </head>
 <body>
-    <h1 th:text="${Title}"></h1>
-    <h2 th:text="${Server}"></h2>
-    <h2 th:text="${Ip}"></h2>
+    <h1>Information</h1>
+    <ul>
+        <li><strong>Name:</strong><span th:text="${empleado.name}"></span></li>
+        <li><strong>Surname:</strong><span th:text="${empleado.surname}"></span></li>
+        <li><strong>Address:</strong><span th:text="${empleado.address}"></span></li>
+        <li><strong>Rol:</strong><span th:text="${empleado.rol}"></span></li>
+        <li><strong>Age:</strong><span th:text="${empleado.age}"></span></li>
+        <li><strong>Phone Number:</strong><span th:text="${empleado.phoneNumber}"></span></li>
+        <li><strong>ID:</strong><span th:text="${empleado.id}"></span></li>
+    </ul>
 </body>
 </html>
