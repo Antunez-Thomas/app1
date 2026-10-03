@@ -10,7 +10,9 @@
     <ul>
         <li><strong>Name:</strong><span th:text="${empleado.name}"></span></li>
         <li><strong>Surname:</strong><span th:text="${empleado.surname}"></span></li>
-        <li><strong>Address:</strong><span th:text="${empleado.address}"></span></li>
+        <li><strong>Address:</strong>
+            <span th:text="${empleado.address != null ? empleado.address : 'not address available'}"></span>
+        </li>
         <li><strong>Rol:</strong><span th:text="${empleado.rol}"></span></li>
         <li><strong>Age:</strong><span th:text="${empleado.age}"></span></li>
         <li><strong>Phone Number:</strong><span th:text="${empleado.phoneNumber}"></span></li>
