@@ -27,6 +27,6 @@ public class ExampleController {
     public List<Empleados> ListEmployees(){
         return Arrays.asList(
                 new Empleados("Mari","ola","grlapa", "dev", 35, 342342, 1)
-        )
+        );
     }
 }
